@@ -6,9 +6,11 @@
 package castlevaniachess;
 
 import javafx.application.Application;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+import javafx.scene.layout.VBox;
 
 /**
  *
@@ -23,10 +25,14 @@ public class CastlevaniaChess extends Application {
         // Creamos el objeto tableroView para poder usar la clase TableroView
         TableroView tableroView = new TableroView();
         
-        // Creamos el panel sobre el que añadiremos el tablero
-        StackPane root = new StackPane();
+        // Usamos un VBox y un HBoxpara alinear la pantalla y que la ventana sea responsivo
+        HBox hBox = new HBox(tableroView.getChessTablero());
+        hBox.setAlignment(Pos.CENTER);
+        VBox root = new VBox();
         // Añadimos el gridpane de la clase tableroView al panel
-        root.getChildren().add(tableroView.getChessTablero());
+        root.getChildren().add(hBox);
+        // Centramos el gridpane para que el tablero se mantenga en el centro
+        root.setAlignment(Pos.CENTER);
         // Pedimos a tableroView que muestre el tablero en pantalla
         tableroView.mostrarTablero();
         
@@ -34,7 +40,7 @@ public class CastlevaniaChess extends Application {
         Scene scene = new Scene(root, 700, 700);
         
         // Le damos un título a la ventana
-        primaryStage.setTitle("Castlevania Chess");
+        primaryStage.setTitle("Ajedrez Castlevania");
         primaryStage.setScene(scene);
         // Hacemos que se muestre
         primaryStage.show();

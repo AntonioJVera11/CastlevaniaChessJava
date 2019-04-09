@@ -18,14 +18,14 @@ public class CastlevaniaChess extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        // Creamos el objeto tablero
+        // Creamos el objeto tablero para poder usar la clase tablero
         Tablero tablero = new Tablero();
-        // Creamos el objeto tableroView
+        // Creamos el objeto tableroView para poder usar la clase TableroView
         TableroView tableroView = new TableroView();
         
         // Creamos el panel sobre el que añadiremos el tablero
         StackPane root = new StackPane();
-        // Añadimos el tableroView al panel
+        // Añadimos el gridpane de la clase tableroView al panel
         root.getChildren().add(tableroView.getChessTablero());
         // Pedimos a tableroView que muestre el tablero en pantalla
         tableroView.mostrarTablero();

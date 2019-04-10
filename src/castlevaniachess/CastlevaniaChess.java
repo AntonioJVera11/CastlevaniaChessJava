@@ -20,29 +20,32 @@ public class CastlevaniaChess extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        // Creamos el objeto tablero para poder usar la clase tablero
+        /* Creamos el objeto tablero para poder usar la clase tablero*/
         Tablero tablero = new Tablero();
-        // Creamos el objeto tableroView para poder usar la clase TableroView
+        /* Creamos el objeto tableroView para poder usar la clase TableroView*/
         TableroView tableroView = new TableroView();
         
-        // Usamos un VBox y un HBoxpara alinear la pantalla y que la ventana sea responsivo
+        /* Usamos un VBox y un HBox para alinear la pantalla y que la ventana
+        sea responsivo*/
         HBox hBox = new HBox(tableroView.getChessTablero());
         hBox.setAlignment(Pos.CENTER);
         VBox root = new VBox();
-        // Añadimos el gridpane de la clase tableroView al panel
+        /* Añadimos el gridpane de la clase tableroView al panel*/
         root.getChildren().add(hBox);
-        // Centramos el gridpane para que el tablero se mantenga en el centro
+        /* Centramos el gridpane para que el tablero se mantenga en el centro*/
         root.setAlignment(Pos.CENTER);
-        // Pedimos a tableroView que muestre el tablero en pantalla
+        /* Pedimos a tableroView que muestre el tablero en pantalla*/
         tableroView.mostrarTablero();
+//        tableroView.mostrarFichas(0, 0);
         
-        // Definimos las dimensiones de la escena
+        /* Definimos las dimensiones de la escena*/
         Scene scene = new Scene(root, 700, 700);
         
-        // Le damos un título a la ventana
+        /* Le damos un título a la ventana*/
         primaryStage.setTitle("Ajedrez Castlevania");
+        /* Definimos la escena*/
         primaryStage.setScene(scene);
-        // Hacemos que se muestre
+        /* Hacemos que se muestre*/
         primaryStage.show();
     }
 

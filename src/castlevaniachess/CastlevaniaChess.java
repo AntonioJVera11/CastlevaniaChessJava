@@ -43,6 +43,17 @@ public class CastlevaniaChess extends Application {
         tableroView.mostrarFichas(4, 0);
         tableroView.mostrarFichas(5, 0);
         tableroView.mostrarFichas(6, 0);
+        tableroView.mostrarFichas(0, 6);
+        tableroView.mostrarFichas(1, 6);
+        tableroView.mostrarFichas(2, 6);
+        tableroView.mostrarFichas(3, 6);
+        tableroView.mostrarFichas(4, 6);
+        tableroView.mostrarFichas(5, 6);
+        tableroView.mostrarFichas(6, 6);
+        tableroView.mostrarFichas(3, 1);
+        tableroView.mostrarFichas(3, 5);
+        
+        
         
         
         /* Definimos las dimensiones de la escena*/

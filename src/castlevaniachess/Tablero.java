@@ -79,6 +79,7 @@ public class Tablero {
         colocarPieza(4, 0, Tablero.CABALLERO_1_2);
         colocarPieza(5, 0, Tablero.MAGO_1_2);
         colocarPieza(6, 0, Tablero.MURCIELAGO_1_2);
+        colocarPieza(3, 1, Tablero.ZOMBI_1);
         //Colocación inicial de las piezas del jugador 2
         colocarPieza(0, 6, Tablero.MURCIELAGO_2);
         colocarPieza(1, 6, Tablero.MAGO_2);
@@ -87,6 +88,7 @@ public class Tablero {
         colocarPieza(4, 6, Tablero.CABALLERO_2_2);
         colocarPieza(5, 6, Tablero.MAGO_2_2);
         colocarPieza(6, 6, Tablero.MURCIELAGO_2_2);
+        colocarPieza(3, 5, Tablero.ZOMBI_2);
     }
     
     public void startMatrix (Tablero tablero){ 

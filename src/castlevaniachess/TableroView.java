@@ -96,7 +96,6 @@ public class TableroView {
     
     /* Creamos el método que coloque las fichas en el tablero*/
     public void mostrarFichas (int x, int y) {
-        System.out.println("Mostrando rey en mostrarfichas");
         System.out.println(tablero.tableMatrix[x][y]);
         switch(tablero.tableMatrix[x][y]) {   
             case 'R':
@@ -104,7 +103,96 @@ public class TableroView {
                 rey1.setFitHeight(TAMCASILLA);
                 rey1.setFitWidth(TAMCASILLA);
                 chesstablero.add(rey1, x, y);
-                System.out.println("Mostrando rey");
+                break;
+            case 'B':
+                ImageView torre11 = new ImageView(torre);
+                torre11.setFitHeight(TAMCASILLA);
+                torre11.setFitWidth(TAMCASILLA);
+                chesstablero.add(torre11, x, y);
+                break;
+            case 'M':
+                ImageView mago11 = new ImageView(mago);
+                mago11.setFitHeight(TAMCASILLA);
+                mago11.setFitWidth(TAMCASILLA);
+                chesstablero.add(mago11, x, y);
+                break;
+            case 'C':
+                ImageView caballero11 = new ImageView(caballero);
+                caballero11.setFitHeight(TAMCASILLA);
+                caballero11.setFitWidth(TAMCASILLA);
+                chesstablero.add(caballero11, x, y);
+                break;
+            case 'Z':
+            ImageView peon1 = new ImageView(peon);
+            peon1.setFitHeight(TAMCASILLA);
+            peon1.setFitWidth(TAMCASILLA);
+            chesstablero.add(peon1, x, y);
+                break;
+            case 'K':
+            ImageView caballero12 = new ImageView(caballero);
+            caballero12.setFitHeight(TAMCASILLA);
+            caballero12.setFitWidth(TAMCASILLA);
+            chesstablero.add(caballero12, x, y);
+                break;
+            case 'W':
+            ImageView mago12 = new ImageView(mago);
+            mago12.setFitHeight(TAMCASILLA);
+            mago12.setFitWidth(TAMCASILLA);
+            chesstablero.add(mago12, x, y);
+                break;  
+            case 'V':
+                ImageView torre12 = new ImageView(torre);
+                torre12.setFitHeight(TAMCASILLA);
+                torre12.setFitWidth(TAMCASILLA);
+                chesstablero.add(torre12, x, y);
+                break;
+            case 'b':
+                ImageView torre21 = new ImageView(torre);
+                torre21.setFitHeight(TAMCASILLA);
+                torre21.setFitWidth(TAMCASILLA);
+                chesstablero.add(torre21, x, y);
+                break;
+            case 'm':
+                ImageView mago21 = new ImageView(mago);
+                mago21.setFitHeight(TAMCASILLA);
+                mago21.setFitWidth(TAMCASILLA);
+                chesstablero.add(mago21, x, y);
+                break;
+            case 'c':
+                ImageView caballero21 = new ImageView(caballero);
+                caballero21.setFitHeight(TAMCASILLA);
+                caballero21.setFitWidth(TAMCASILLA);
+                chesstablero.add(caballero21, x, y);
+                break;
+            case 'r':
+                ImageView rey2 = new ImageView(rey);
+                rey2.setFitHeight(TAMCASILLA);
+                rey2.setFitWidth(TAMCASILLA);
+                chesstablero.add(rey2, x, y);
+                break;
+            case 'k':
+            ImageView caballero22 = new ImageView(caballero);
+            caballero22.setFitHeight(TAMCASILLA);
+            caballero22.setFitWidth(TAMCASILLA);
+            chesstablero.add(caballero22, x, y);
+                break;
+            case 'w':
+            ImageView mago22 = new ImageView(mago);
+            mago22.setFitHeight(TAMCASILLA);
+            mago22.setFitWidth(TAMCASILLA);
+            chesstablero.add(mago22, x, y);
+                break;  
+            case 'v':
+                ImageView torre22 = new ImageView(torre);
+                torre22.setFitHeight(TAMCASILLA);
+                torre22.setFitWidth(TAMCASILLA);
+                chesstablero.add(torre22, x, y);
+                break; 
+            case 'z':
+            ImageView peon2 = new ImageView(peon);
+            peon2.setFitHeight(TAMCASILLA);
+            peon2.setFitWidth(TAMCASILLA);
+            chesstablero.add(peon2, x, y);
                 break;
         }
     }

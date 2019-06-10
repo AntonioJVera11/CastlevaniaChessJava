@@ -36,7 +36,14 @@ public class CastlevaniaChess extends Application {
         root.setAlignment(Pos.CENTER);
         /* Pedimos a tableroView que muestre el tablero en pantalla*/
         tableroView.mostrarTablero();
-//        tableroView.mostrarFichas(0, 0);
+        tableroView.mostrarFichas(0, 0);
+        tableroView.mostrarFichas(1, 0);
+        tableroView.mostrarFichas(2, 0);
+        tableroView.mostrarFichas(3, 0);
+        tableroView.mostrarFichas(4, 0);
+        tableroView.mostrarFichas(5, 0);
+        tableroView.mostrarFichas(6, 0);
+        
         
         /* Definimos las dimensiones de la escena*/
         Scene scene = new Scene(root, 700, 700);

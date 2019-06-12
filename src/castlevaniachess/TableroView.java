@@ -66,6 +66,13 @@ public class TableroView {
         /* Añadimos el tablero al panel*/
         chesstablero.add(casilla, x, y);
     }
+    
+    public void casillaSeleccionada (int x, int y) {
+        Rectangle seleccionada = new Rectangle(TAMCASILLA, TAMCASILLA);
+        seleccionada.setFill(Color.BURLYWOOD);
+        seleccionada.setStroke(Color.GREEN);
+        chesstablero.add(seleccionada, x, y);
+    }
 
     /* Creamos el método que mostrará el tablero con un bucle
      for en X e Y*/
@@ -123,22 +130,22 @@ public class TableroView {
                 chesstablero.add(caballero11, x, y);
                 break;
             case 'Z':
-            ImageView peon1 = new ImageView(peon);
-            peon1.setFitHeight(TAMCASILLA);
-            peon1.setFitWidth(TAMCASILLA);
-            chesstablero.add(peon1, x, y);
+                ImageView peon1 = new ImageView(peon);
+                peon1.setFitHeight(TAMCASILLA);
+                peon1.setFitWidth(TAMCASILLA);
+                chesstablero.add(peon1, x, y);
                 break;
             case 'K':
-            ImageView caballero12 = new ImageView(caballero);
-            caballero12.setFitHeight(TAMCASILLA);
-            caballero12.setFitWidth(TAMCASILLA);
-            chesstablero.add(caballero12, x, y);
+                ImageView caballero12 = new ImageView(caballero);
+                caballero12.setFitHeight(TAMCASILLA);
+                caballero12.setFitWidth(TAMCASILLA);
+                chesstablero.add(caballero12, x, y);
                 break;
             case 'W':
-            ImageView mago12 = new ImageView(mago);
-            mago12.setFitHeight(TAMCASILLA);
-            mago12.setFitWidth(TAMCASILLA);
-            chesstablero.add(mago12, x, y);
+                ImageView mago12 = new ImageView(mago);
+                mago12.setFitHeight(TAMCASILLA);
+                mago12.setFitWidth(TAMCASILLA);
+                chesstablero.add(mago12, x, y);
                 break;  
             case 'V':
                 ImageView torre12 = new ImageView(torre);
@@ -171,16 +178,16 @@ public class TableroView {
                 chesstablero.add(rey2, x, y);
                 break;
             case 'k':
-            ImageView caballero22 = new ImageView(caballero);
-            caballero22.setFitHeight(TAMCASILLA);
-            caballero22.setFitWidth(TAMCASILLA);
-            chesstablero.add(caballero22, x, y);
+                ImageView caballero22 = new ImageView(caballero);
+                caballero22.setFitHeight(TAMCASILLA);
+                caballero22.setFitWidth(TAMCASILLA);
+                chesstablero.add(caballero22, x, y);
                 break;
             case 'w':
-            ImageView mago22 = new ImageView(mago);
-            mago22.setFitHeight(TAMCASILLA);
-            mago22.setFitWidth(TAMCASILLA);
-            chesstablero.add(mago22, x, y);
+                ImageView mago22 = new ImageView(mago);
+                mago22.setFitHeight(TAMCASILLA);
+                mago22.setFitWidth(TAMCASILLA);
+                chesstablero.add(mago22, x, y);
                 break;  
             case 'v':
                 ImageView torre22 = new ImageView(torre);
@@ -189,11 +196,11 @@ public class TableroView {
                 chesstablero.add(torre22, x, y);
                 break; 
             case 'z':
-            ImageView peon2 = new ImageView(peon);
-            peon2.setFitHeight(TAMCASILLA);
-            peon2.setFitWidth(TAMCASILLA);
-            chesstablero.add(peon2, x, y);
-                break;
+                ImageView peon2 = new ImageView(peon);
+                peon2.setFitHeight(TAMCASILLA);
+                peon2.setFitWidth(TAMCASILLA);
+                chesstablero.add(peon2, x, y);
+                    break;
         }
     }
 } 
